@@ -1,3 +1,3 @@
 ### McKenzie Day Portfolio
 
-## https://mcday.github.io/portfolio/
+## https://macday.github.io/portfolio/
