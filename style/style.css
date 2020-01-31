@@ -12,6 +12,8 @@ html {
 }
 
 body {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-wrap: wrap-reverse;
   width: 100%;
@@ -27,7 +29,7 @@ body {
   display: flex;
   flex-wrap: nowrap;
   flex-flow: column;
-  background-color: #f4f4f4;
+  background-color: #f2f2f2;
   margin: auto;
 }
 
@@ -40,10 +42,11 @@ body {
   align-items: center;
   overflow-wrap: normal;
 }
-.container .box {
+
+/*  Boxes */
+.box {
   width: 40%;
 }
-/*  Boxes */
 .box h1 {
   border-bottom: 4px solid #222;
   font-size: 3vw;
@@ -53,15 +56,17 @@ body {
 
 .box p {
   padding-left: 10px;
-  border-left: 4px solid #d4d4d4;
+  border-left: 4px solid #949494;
   font-size: 1vw;
   font-weight: 300;
 }
 
 .box a {
-  text-decoration: none;
-  font-weight: 600;
-  color: orange;
+  font-size: larger;
+  font-weight: bold;
+  text-decoration: solid;
+  text-shadow: 0 1px 1px #ffb347;
+  color: #ffb347;
 }
 
 .box img {
@@ -72,11 +77,35 @@ body {
 
 .odd {
   /* background: linear-gradient(0deg, #d4d4d4, #f4f4f4); */
-  background-color: #d4d4d4;
+  background-color: #949494;
 }
 
 .odd p {
-  border-left-color: #f4f4f4;
+  border-left-color: #f2f2f2;
+}
+
+/*  Project Card  */
+.project-box {
+  border: 1px solid red;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: space-around;
+  align-content: space-evenly;
+}
+
+.project-card {
+  margin: 5px;
+  width: 300px;
+  height: 100px;
+  border: 1px solid red;
+}
+
+.project-card h1 {
+  font-size: 1vw;
+  border: none;
+  display: inline-flexbox;
 }
 
 /*  Contact Card  */
@@ -125,7 +154,6 @@ body {
   z-index: 1;
   top: 0;
   right: 0;
-  overflow-x: hidden;
   padding: 5px;
   margin: 0;
   /*  Easy even spacing */
@@ -160,8 +188,7 @@ body {
 #side img {
   margin: 0;
   padding: 10px;
-  width: 125px;
-  height: 125px;
+  width: 7vw;
   border-radius: 50%;
 }
 
@@ -191,17 +218,12 @@ body {
     margin: 0;
   }
 
-  #side img {
-    width: 65px;
-    height: 65px;
-  }
-
   #content-area {
     width: 100%;
   }
 
   .box {
-    width: 100%;
+    width: 60%;
   }
 
   .box h1 {
@@ -211,4 +233,39 @@ body {
   .box p {
     font-size: 3vw;
   }
+
+  .contact-card {
+    width: 40%;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    font-size: 5vw;
+    padding: 5px;
+  }
+  
+  .contact-card a {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .contact-card h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border: none;
+    font-size: 2vw;
+    padding-top: 15px;
+  }
 }
+
+/* @media sceen and (max-height: 600px) {
+  .box h1 {
+    font-size: 4vw;
+  }
+
+  .box p {
+    font-size: 2vw;
+  }
+} */
