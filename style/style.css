@@ -1,13 +1,6 @@
 /*  GLOBAL ALTERATIONS  */
-
 :root {
-  /* background: linear-gradient(
-    70deg,
-    rgba(128, 0, 128, 0.75),
-    rgba(255, 166, 0, 0.75),
-    rgba(0, 255, 255, 0.75)
-  ); */
-  background-color: #f4f4f4;
+  background: linear-gradient(50deg, #000, #111, #222, #333, #444, #555);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   overflow-x: hidden;
@@ -15,24 +8,26 @@
 
 html {
   scroll-behavior: smooth;
+  background: linear-gradient(50deg, #000, #111, #222, #333, #444, #555);
 }
 
 body {
   display: flex;
   flex-wrap: wrap-reverse;
   width: 100%;
+  background: linear-gradient(50deg, #000, #111, #222, #333, #444, #555);
 }
 
 /*  MAIN CONTENT AREA   */
-
 #content-area {
-  width: 80%;
+  width: 100%;
   height: 100%;
   justify-content: center;
   align-content: center;
   display: flex;
   flex-wrap: nowrap;
   flex-flow: column;
+  background-color: #f4f4f4;
   margin: auto;
 }
 
@@ -43,16 +38,12 @@ body {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  margin: 2px;
-  padding: 3px;
   overflow-wrap: normal;
 }
-
 .container .box {
-  width: 50%;
-  margin: auto;
+  width: 40%;
 }
-
+/*  Boxes */
 .box h1 {
   border-bottom: 4px solid #222;
   font-size: 3vw;
@@ -62,10 +53,9 @@ body {
 
 .box p {
   padding-left: 10px;
-  border-left: 4px solid lightgray;
+  border-left: 4px solid #d4d4d4;
   font-size: 1vw;
   font-weight: 300;
-  line-height: 3vh;
 }
 
 .box a {
@@ -75,13 +65,58 @@ body {
 }
 
 .box img {
-  padding-left: 5px;
-  width: 30px;
-  height: 30px;
+  padding-left: 2px;
+  width: 15px;
+  height: 15px;
+}
+
+.odd {
+  /* background: linear-gradient(0deg, #d4d4d4, #f4f4f4); */
+  background-color: #d4d4d4;
+}
+
+.odd p {
+  border-left-color: #f4f4f4;
+}
+
+/*  Contact Card  */
+.contact-box {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: space-between;
+}
+
+.contact-card {
+  width: 25%;
+  display: flex;
+  flex-flow: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  font-size: 5vw;
+  padding: 10px;
+}
+
+.contact-card a {
+  text-align: center;
+  padding: 10px;
+}
+
+.contact-card h1 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border: none;
+  font-size: 2vw;
+  padding-top: 15px;
 }
 
 /*  NAV BAR ON THE RIGHT SIDE */
-
 #side {
   /*  Locking side bar to right */
   width: auto;
@@ -99,18 +134,15 @@ body {
   flex-direction: column;
   justify-content: space-between;
   /*  Aesthetic */
-  background-color: black;
+  background: linear-gradient(50deg, #000, #111, #222, #333, #444, #555);
   color: white;
   font-size: 1vw;
   font-weight: 400;
-  line-height: 2rem;
 }
 
 #side a {
   text-decoration: none;
   color: white;
-  margin-top: 50px;
-  margin-bottom: 5px;
 }
 
 #side .nav-wrapper {
@@ -119,49 +151,58 @@ body {
   display: flex;
   flex-flow: column;
   flex-wrap: nowrap;
+  text-align: center;
+  justify-content: center;
+  align-content: flex-start;
+  font-size: 3vw;
 }
 
 #side img {
+  margin: 0;
   padding: 10px;
-  width: 150px;
-  height: 150px;
+  width: 125px;
+  height: 125px;
   border-radius: 50%;
 }
 
 @media screen and (max-width: 1000px) {
   #side {
+    position: fixed;
+    top: 0;
+    left: 0;
     height: 10vh;
     width: 100%;
     flex-flow: row;
-    font-size: 3vw;
-    justify-content: flex-start;
-    line-height: 3vh;
+    justify-content: space-between;
+    padding: 0%;
   }
 
   #side .nav-wrapper {
+    margin: 0;
+    padding: 0;
     flex-flow: row;
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-around;
+    font-size: 5vw;
   }
 
   #side a {
     margin: 0;
-    margin-right: 40px;
   }
 
   #side img {
-    width: 80px;
-    height: 80px;
+    width: 65px;
+    height: 65px;
   }
 
   #content-area {
     width: 100%;
   }
 
- .box {
-   width: 100%;
- }
+  .box {
+    width: 100%;
+  }
 
   .box h1 {
     font-size: 8vw;
@@ -169,6 +210,5 @@ body {
 
   .box p {
     font-size: 3vw;
-    line-height: 5vh;
   }
 }
