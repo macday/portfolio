@@ -74,6 +74,12 @@ body {
   color: orange;
 }
 
+.box img {
+  padding-left: 5px;
+  width: 30px;
+  height: 30px;
+}
+
 /*  NAV BAR ON THE RIGHT SIDE */
 
 #side {
@@ -103,6 +109,8 @@ body {
 #side a {
   text-decoration: none;
   color: white;
+  margin-top: 50px;
+  margin-bottom: 5px;
 }
 
 #side .nav-wrapper {
@@ -126,7 +134,25 @@ body {
     width: 100%;
     flex-flow: row;
     font-size: 3vw;
+    justify-content: flex-start;
     line-height: 3vh;
+  }
+
+  #side .nav-wrapper {
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+  }
+
+  #side a {
+    margin: 0;
+    margin-right: 40px;
+  }
+
+  #side img {
+    width: 80px;
+    height: 80px;
   }
 
   #content-area {
@@ -143,5 +169,6 @@ body {
 
   .box p {
     font-size: 3vw;
+    line-height: 5vh;
   }
 }
