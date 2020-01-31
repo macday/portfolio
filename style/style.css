@@ -214,6 +214,10 @@ body {
     font-size: 5vw;
   }
 
+#side .nav-wrapper img {
+    width: 50vw;
+  }
+
   #side a {
     margin: 0;
   }
