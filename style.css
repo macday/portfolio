@@ -1,0 +1,94 @@
+/*  GLOBAL ALTERATIONS  */
+
+:root {
+  /* background: linear-gradient(
+    70deg,
+    rgba(128, 0, 128, 0.75),
+    rgba(255, 166, 0, 0.75),
+    rgba(0, 255, 255, 0.75)
+  ); */
+  background-color: #f4f4f4;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  width: 100%;
+}
+
+/*  MAIN CONTENT AREA   */
+
+#content-area {
+  width: 80%;
+  height: 100%;
+  justify-content: center;
+  align-content: center;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-flow: column;
+  margin: auto;
+}
+
+.container {
+  border: 1px solid red;
+  height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+  padding: 3px;
+  overflow-wrap: normal;
+}
+
+.container .box {
+  border: 1px solid orange;
+  width: 50%;
+  margin: auto;
+}
+
+.box h1 {
+  border: 1px solid red;
+}
+
+.box p {
+  border: 1px solid green;
+}
+
+/*  NAV BAR ON THE RIGHT SIDE */
+
+#side {
+  width: 100px;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  padding: 5px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-left: 1px solid rgb(69, 5, 129);
+  background: linear-gradient(
+    70deg,
+    rgba(128, 0, 128, 0.75),
+    rgba(255, 166, 0, 0.75),
+    rgba(0, 255, 255, 0.75)
+  );
+}
+
+#side .nav-wrapper {
+  margin: 1px;
+  padding: 0;
+  display: flex;
+  flex-flow: column;
+  flex-wrap: nowrap;
+}
