@@ -35,17 +35,20 @@ body {
 
 .container {
   height: 100vh;
+  min-height: fit-content;
+  min-width: fit-content;
   display: flex;
   flex-wrap: nowrap;
   flex-flow: column;
   justify-content: center;
   align-items: center;
   overflow-wrap: normal;
+  padding: 10px;
 }
 
 /*  Boxes */
 .box {
-  width: 40%;
+  width: 50vw;
 }
 .box h1 {
   border-bottom: 4px solid #222;
@@ -65,7 +68,7 @@ body {
   font-size: larger;
   font-weight: bold;
   text-decoration: solid;
-  text-shadow: 0 1px 1px #ffb347;
+  /* text-shadow: 0 1px 1px #ffb347; */
   color: #ffb347;
 }
 
@@ -85,7 +88,65 @@ body {
 }
 
 /*  Project Card  */
+
 .project-box {
+  padding: 0;
+  margin: 5px;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+}
+
+.project-card {
+  width: fit-content;
+  max-width: 16vw;
+  background-color: #949494;
+  padding: 5px;
+  text-align: center;
+  /* margin: 15px 5px; */
+  margin: 2vh 1vw;
+  border-radius: 5px;
+}
+
+.project-card .caption {
+  position: relative;
+  background-color: #f4f4f4;
+  width: 100%;
+  /* height: 18vh; */
+  padding: 15px 10px;
+}
+
+.project-card i {
+  position: absolute;
+  height: 5vh;
+  width: 5vh;
+  top: -2.5vh;
+  left: -2.5vh;
+  color: #444;
+  background-color: #ffb347;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.project-card h1 {
+  border: none;
+  margin: auto;
+  text-align: center;
+  font-size: 1vw;
+}
+
+.project-card p {
+  color: #949494;
+  border: none;
+  margin: 0;
+  text-align: center;
+  font-size: 1vw;
+}
+
+/*  Project Card  */
+/* .project-box {
   border: 1px solid red;
   display: flex;
   flex-flow: row;
@@ -106,7 +167,7 @@ body {
   font-size: 1vw;
   border: none;
   display: inline-flexbox;
-}
+} */
 
 /*  Contact Card  */
 .contact-box {
@@ -214,7 +275,7 @@ body {
     font-size: 5vw;
   }
 
-#side .nav-wrapper img {
+  #side .nav-wrapper img {
     width: 20vw;
   }
 
@@ -227,7 +288,7 @@ body {
   }
 
   .box {
-    width: 60%;
+    width: 90%;
   }
 
   .box h1 {
@@ -248,28 +309,41 @@ body {
     font-size: 5vw;
     padding: 5px;
   }
-  
+
   .contact-card a {
     text-align: center;
-    padding: 10px;
+    padding: 5px;
   }
-  
+
+  .contact-card i {
+    font-size: 10vw;
+  }
+
   .contact-card h1 {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    border: none;
-    font-size: 2vw;
+    font-size: 5vw;
     padding-top: 15px;
   }
-}
 
-/* @media sceen and (max-height: 600px) {
-  .box h1 {
-    font-size: 4vw;
+  .project-card {
+    width: fit-content;
+    max-width: 30vw;
+    padding: 3px;
   }
 
-  .box p {
+  .project-card .caption {
+    position: relative;
+    background-color: #f4f4f4;
+    width: 100%;
+    /* height: 18vh; */
+    padding: 5px;
+  }
+
+  .project-card h1 {
+    font-size: 3vw;
+    margin-bottom: 5px;
+  }
+
+  .project-card p {
     font-size: 2vw;
   }
-} */
+}
