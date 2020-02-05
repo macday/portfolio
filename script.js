@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 function fade(element, time) {
-    var op = 0.1  // initial opacity
+    var op = 0.1 
     var mg = 100
     console.log(element)
     var timer = setInterval(function () {
