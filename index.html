@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- <link rel="stylesheet" href="style/style.css" /> -->
+    <link rel="stylesheet" href="style/style.css" />
     <!-- BootStrap Toolkits -->
     <link
       rel="stylesheet"
@@ -12,17 +12,20 @@
       crossorigin="anonymous"
     />
     <!-- W3Schools Toolkit -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" /> -->
     <title>McKenzie Day</title>
   </head>
   <!-- --------------------------------------------------------------------------------- -->
   <!-- --------------------------------------------------------------------------------- -->
   <!-- --------------------------------------------------------------------------------- -->
   <!-- Body of Page -->
-  <body class="container-fluid d-flex flex-column flex-nowrap m-0 p-0">
+  <body
+    class="container-fluid d-flex flex-column flex-nowrap m-0 p-0 text-center"
+  >
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Navbar</a>
+      <!-- Navbar -->
+      <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+        <!-- <a class="navbar-brand" href="#">McKenzie Day</a> -->
         <button
           class="navbar-toggler"
           type="button"
@@ -34,149 +37,225 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Home <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
               <a
-                class="nav-link disabled"
-                href="#"
+                class="nav-link"
+                href="/index.html"
                 tabindex="-1"
                 aria-disabled="true"
-                >Disabled</a
               >
+                Home
+                <i class="fas fa-home px-1"></i>
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/projects.html">
+                Projects
+                <i class="fas fa-flask px-1"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">
+                About
+                <i class="fas fa-address-card px-1"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">
+                Contact
+                <i class="fas fa-envelope px-1"></i>
+              </a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <div class="container-fluid vh-100 bg-light">
-      <div class="container-sm p-3 mt-3">
-        <div class="card m-auto p-1" style="min-width: 25vw;">
-          <img
-            src="images/headshot.jpeg"
-            class="card-img-top m-auto"
-            alt="Author Headshot"
-            style="max-width: 500px"
-          />
-          <div class="card-body">
-            <h5 class="card-title font-weight-bold">McKenzie Day</h5>
-            <p class="card-text text-sm">
-              Welcome to my webpage! I'm a 2nd year Computer Science student at
-              Ryerson University and this website is a personal project/exhibit
-              of my web development skills.
+    <div class="container-fluid py-4 px-3">
+      <div class="container-fluid">
+        <div id="showcase" class="jumbotron jumbotron-fluid mt-5 text-light">
+          <div class="container">
+            <h1 class="display-4">
+              McKenzie Day
+            </h1>
+            <p class="lead">
+              Student & Developer
             </p>
-            <a href="#" class="btn btn-dark">Something</a>
           </div>
         </div>
       </div>
-    </div>
-    <div class="container-fluid vh-100 bg-dark text-center">
-      <div class="container-sm h-75">
-        <h3 class="text-light font-weight-bold text-center p-1 mt-3">
-          <i class="fas fa-code"></i>
-          Coding Experience
-          <i class="fas fa-code"></i>
-        </h3>
+      <div
+        class="container-fluid d-flex flex-row flex-wrap flex-sm-nowrap py-3"
+      >
+        <div class="container-sm">
+          <div class="container-sm h-75">
+            <div
+              class="container p-2 d-flex flex-row flex-nowrap align-items-center justify-content-center"
+            >
+              <h3>
+                <i class="fas fa-code px-1"></i>
+              </h3>
+              <h3>
+                Coding Experience
+              </h3>
+              <h3>
+                <i class="fas fa-code px-1"></i>
+              </h3>
+            </div>
+            <div class="container-fluid mb-3">
+              <!-- ROW INCLUDING JAVA JAVASCRIPT AND PYTHON -->
+              <div class="row py-1">
+                <div class="col">
+                  <h5>Javascript</h5>
+                </div>
+                <div class="col">
+                  <div class="progress">
+                    <div
+                      class="progress-bar p-2 text-left bg-success"
+                      role="progressbar"
+                      style="width: 90%"
+                    >
+                      90%
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row py-1">
+                <div class="col">
+                  <h5>Python</h5>
+                </div>
+                <div class="col">
+                  <div class="progress">
+                    <div
+                      class="progress-bar p-2 text-left bg-success"
+                      role="progressbar"
+                      style="width: 90%"
+                    >
+                      90%
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row py-1">
+                <div class="col">
+                  <h5>Java</h5>
+                </div>
+                <div class="col">
+                  <div class="progress">
+                    <div
+                      class="progress-bar p-2 text-left bg-success"
+                      role="progressbar"
+                      style="width: 90%"
+                    >
+                      90%
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-        <button
-          class="btn btn-light m-3"
-          type="button"
-          data-toggle="collapse"
-          data-target="#programmingCollapse"
-          aria-expanded="false"
-          aria-controls="programmingCollapse"
-        >
-          Programming Languages
-        </button>
-        <button
-          class="btn btn-light m-3"
-          type="button"
-          data-toggle="collapse"
-          data-target="#webDevCollapse"
-          aria-expanded="false"
-          aria-controls="webDevCollapse"
-        >
-          Web Development
-        </button>
-
-        <div class="collapse m-1" id="programmingCollapse">
-          <div class="card card-body">
-            <div class="row">
-              <div class="col">
-                <h4>Java</h4>
-                <h4>Javascript</h4>
-                <h4>Python</h4>
-                <h4>Smalltalk</h4>
-                <h4>Elixir</h4>
+              <div class="row py-1">
+                <div class="col">
+                  <h5>Ruby</h5>
+                </div>
+                <div class="col">
+                  <div class="progress">
+                    <div
+                      class="progress-bar p-2 text-left text-dark bg-warning"
+                      role="progressbar"
+                      style="width: 70%"
+                    >
+                      70%
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row py-1">
+                <div class="col">
+                  <h5>Elixir</h5>
+                </div>
+                <div class="col">
+                  <div class="progress">
+                    <div
+                      class="progress-bar p-2 text-left text-dark bg-warning"
+                      role="progressbar"
+                      style="width: 60%"
+                    >
+                      60%
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row py-1">
+                <div class="col">
+                  <h5>C</h5>
+                </div>
+                <div class="col">
+                  <div class="progress">
+                    <div
+                      class="progress-bar p-2 text-left text-dark bg-warning"
+                      role="progressbar"
+                      style="width: 65%"
+                    >
+                      65%
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row py-1">
+                <div class="col">
+                  <h5>Bash</h5>
+                </div>
+                <div class="col">
+                  <div class="progress">
+                    <div
+                      class="progress-bar p-2 text-left bg-success"
+                      role="progressbar"
+                      style="width: 75%"
+                    >
+                      75%
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+          <!-- <p>
+            Two classmates and I are currently working on a new application in
+            the React Web Framework, to find out more about it check out our
+            Github Repo.
+          </p>
+          <button class="btn btn-light">
+            <a href="https://github.com/macday/Vitamin-App">
+              Vitamin App Github Repo
+            </a>
+          </button> -->
         </div>
-        <div class="collapse m-1" id="webDevCollapse">
-          <div class="card card-body">
-            <div class="row">
-              <div class="col">
-                <h4>HTML</h4>
-                <h4>CSS</h4>
-                <h4>Twitter Bootstrap</h4>
-                <h4>React Web Framework</h4>
-                <h4>SQL</h4>
-              </div>
-            </div>
+        <div class="container-sm">
+          <div class="jumbotron m-auto">
+            <h1 class="display-4">Education</h1>
+            <p class="lead font-weight-bold">
+              Ryerson University
+            </p>
+            <hr class="bg-dark my-2" />
+            <p>
+              I've been a student at Ryerson for two years now. Computer Science
+              is my major and I plan to pursue a Software Engineering minor.
+            </p>
+            <h4>Some classes I excelled in...</h4>
+            <ul>
+              <li>Algorithms and Data Structures</li>
+              <li>Into to Unix and C</li>
+              <li>Linear Algebra</li>
+            </ul>
           </div>
         </div>
       </div>
-      <p class="text-light">
-        Two classmates and I are currently working on a new application in the
-        React Web Framework, to find out more about it check out our Github
-        Repo.
-      </p>
-      <button class="btn btn-light">
-        <a href="https://github.com/macday/Vitamin-App">
-          Vitamin App Github Repo
-        </a>
-      </button>
     </div>
-    <div class="container-fluid vh-100 bg-light my-3">
-      <div class="jumbotron m-auto">
-        <h1 class="display-4">Education</h1>
-        <p class="lead font-weight-bold">
-          Ryerson University
-        </p>
-        <hr class="bg-dark my-2" />
-        <p>
-          I've been a student at Ryerson for two years now. Computer Science is
-          my major and I plan to pursue a Software Engineering minor.
-        </p>
-        <p>
-          Some of my favorite courses so far have been Algorithms and Data
-          Structures, Comparative Programming Languages, and Introduction to
-          Unix/Shell Programming. Even though it gets tedious with machine code,
-          pointers, memory allocation, and all the fun stuff, I really enjoy
-          learning all the different aspects of the field.
-        </p>
-        <p class="lead font-weight-bold">
-          Ursula Franklin Academy
-        </p>
-        <hr class="bg-dark my-2" />
-        <p>
-          This is the high-school I attended. It's where I first became
-          interested in computer science and started learning Java. My
-        </p>
-      </div>
-    </div>
-    <div class="container-fluid vh-100 bg-dark"></div>
   </body>
   <script src="script.js"></script>
   <!-- Bootstrap Scripts -->
