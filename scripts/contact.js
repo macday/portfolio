@@ -7,29 +7,26 @@ function sendEmail() {
 }
 
 gsap.from('.anim1', {
-    duration: 1,
+    duration: 0.75,
     opacity: 0,
-    x: -50,
     width: 90,
     ease: 'bounce.out',
-    stagger: 0.05,
-    delay: 0.5
+    stagger: 0.5
 })
 
-gsap.from('.anim2', {
+gsap.from('.reveal', {
     duration: 1,
     opacity: 0,
-    x: 50,
-    ease: 'bounce.out',
-    stagger: 0.05,
-    delay: 0.5
+    y: 10,
+    ease: 'power2.out',
+    stagger: 0.5
 })
 
 gsap.from('.btn', {
     duration: 1,
     opacity: 0,
     ease: 'slow.in',
-    delay: 1.2
+    delay: 1.6
 })
 
 gsap.from('.popup', {
