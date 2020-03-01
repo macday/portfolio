@@ -26,7 +26,7 @@ gsap.from('.btn', {
     duration: 1,
     opacity: 0,
     ease: 'slow.in',
-    delay: 1.2
+    delay: 1.6
 })
 
 gsap.from('.popup', {
