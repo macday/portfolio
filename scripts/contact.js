@@ -10,7 +10,7 @@ gsap.from('.anim1', {
     duration: 1,
     opacity: 0,
     x: -50,
-    width: 0,
+    width: 90,
     ease: 'bounce.out',
     stagger: 0.05,
     delay: 0.5
@@ -27,7 +27,7 @@ gsap.from('.anim2', {
 
 gsap.from('.btn', {
     duration: 1,
-    percentY: 100,
+    opacity: 0,
     ease: 'slow.in',
     delay: 1.2
 })
