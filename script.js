@@ -1,31 +1,23 @@
-var mp = document.getElementById('main-panel')
-document.addEventListener('DOMContentLoaded', (event) => {
-    fade(mp, 20)
-});
+gsap.from('#showcase', {
+    duration: 1.5,
+    y: -200,
+    opacity: 0,
+    ease: 'expo.out'
+})
 
-function fade(element, time) {
-    var op = 0.1 
-    var mg = 100
-    console.log(element)
-    var timer = setInterval(function () {
-        if (op >= 1) {
-            clearInterval(timer)
-        }
-        element.style.opacity = op
-        element.style.filter = 'alpha(opacity=' + op * 100 + ")"
-        op += op * 0.1
-    }, time)
-}
+gsap.from('.anim1', {
+    duration: 1,
+    opacity: 0,
+    ease: 'rough',
+    stagger: 0.6,
+    delay: 1.6
+})
 
-document.querySelectorAll('.nav-button').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault(); //prevent default behaviour
-
-        var panelID = this.id + '-panel' //button has root name of panel
-        element = document.getElementById(panelID)
-        element.scrollIntoView({ //smooth scroll to panel
-            behavior: "smooth"
-        })
-        fade(element, 30)
-    });
-});
+gsap.from('.anim2', {
+    duration: 1,
+    opacity: 0,
+    y: 100,
+    ease: 'expo.in',
+    stagger: 0.6,
+    delay: 1.8
+})
