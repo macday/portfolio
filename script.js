@@ -1,23 +1,24 @@
-gsap.from('#showcase', {
-    duration: 1.5,
-    y: -200,
-    opacity: 0,
-    ease: 'expo.out'
-})
-
-gsap.from('.anim1', {
+var tl = gsap.timeline({defaults: {
     duration: 1,
-    opacity: 0,
-    ease: 'rough',
-    stagger: 0.6,
-    delay: 1.6
-})
+    opacity: 0
+}})
 
-gsap.from('.anim2', {
-    duration: 1,
-    opacity: 0,
-    y: 100,
+tl.from('#showcase', {
+    ease: 'expo.inOut'
+})
+.from('.anim1', {
+    ease: 'power2.in',
+    stagger: 0.5
+})
+.from('.anim2', {
+    delay: 0.2,
+    y: 10,
     ease: 'expo.in',
-    stagger: 0.6,
-    delay: 1.8
+    stagger: 0.5
+})
+.from('.popup', {
+    delay: 0.2,
+    y: 10,
+    ease: 'power4.out',
+    stagger: 0.2
 })
