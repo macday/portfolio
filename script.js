@@ -1,22 +1,10 @@
-var tl = gsap.timeline({defaults: {
-    duration: 1,
-    opacity: 0
-}})
+function sendEmail() {
+    let name = document.getElementById('name').value
+    let subject = document.getElementById('subject').value
+    let content = document.getElementById('content').value
+    window.open(`mailto:mckenziewjday@gmail.com?subject=${name}: ${subject}&body=${content}`)
+}
 
-tl.from('#showcase', {
-    ease: 'expo.expo'
-})
-.from('.anim1', {
-    ease: 'power2.inOut',
-    stagger: 0.5
-})
-// .from('.anim2', {
-//     y: 10,
-//     ease: 'expo.in',
-//     stagger: 0.5
-// })
-.from('.popup', {
-    y: 10,
-    ease: 'power4.out',
-    stagger: 0.2
-})
+function inquire() {
+    document.getElementById("contact").scrollIntoView()
+}

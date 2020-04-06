@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 #showcase {
   position: relative;
   z-index: 0;
@@ -24,6 +27,10 @@
   width: 100%;
   height: 16rem;
   object-fit: cover;
+}
+
+.bg-grey {
+  background-color: #dedede50;
 }
 
 ::-webkit-scrollbar {
