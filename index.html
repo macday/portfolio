@@ -13,6 +13,8 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
   <!-- Style sheet -->
   <link rel="stylesheet" href="style.css" />
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- Icon -->
   <link rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-icon-57x57.png" />
   <link rel="apple-touch-icon" sizes="60x60" href="/images/icons/apple-icon-60x60.png" />
@@ -45,11 +47,11 @@
     <div id="showcase" class="jumbotron jumbotron-fluid text-light d-flex align-items-center text-center"
       style="min-height: 50vh;">
       <div class="container rouneded-lg py-4 my-3">
-        <h1 class="display-1">
+        <h1 data-aos="zoom-out-down" data-aos-duration="1500" class="display-1">
           McKenzie Day
         </h1>
         <br>
-        <p class="lead">
+        <p data-aos="zoom-out-down" data-aos-duration="1500" data-aos-delay="250" class="lead">
           Student & Developer
         </p>
       </div>
@@ -64,7 +66,7 @@
         <!-- ------------------------------------------------------------ -->
         <!-- ------------------------ Experience ------------------------ -->
         <!-- ------------------------------------------------------------ -->
-        <div class="card col-sm m-2 ">
+        <div data-aos="zoom-in-up" data-aos-delay="400" data-aos-duration="750" class="card p-3 col-sm m-2 ">
           <div class="card-body border-top">
             <h5 class="card-title">Experience</h5>
             <h6 class="card-subtitle mb-2 text-muted">Web Development Projects</h6>
@@ -82,7 +84,7 @@
         <!-- ------------------------------------------------------------ -->
         <!-- ------------------------ Current Project ------------------- -->
         <!-- ------------------------------------------------------------ -->
-        <div class="card col-sm m-2 ">
+        <div data-aos="zoom-in-up" data-aos-delay="400" data-aos-duration="750" class="card p-3 col-sm m-2 ">
           <div class="card-body border-top">
             <h5 class="card-title">Current Works</h5>
             <h6 class="card-subtitle mb-2 text-muted">Zoom Training & Freelance Web Development</h6>
@@ -95,7 +97,7 @@
         <!-- ------------------------------------------------------------ -->
         <!-- ------------------------ Education ------------------------- -->
         <!-- ------------------------------------------------------------ -->
-        <div class="card col-sm m-2 ">
+        <div data-aos="zoom-in-up" data-aos-delay="400" data-aos-duration="750" class="card p-3 col-sm m-2 ">
           <div class="card-body border-top">
             <h5 class="card-title">Education</h5>
             <h6 class="card-subtitle mb-2 text-muted">
@@ -121,9 +123,9 @@
         <!-- ------------------------ Education ------------------------- -->
         <!-- ------------------------------------------------------------ -->
         <div class="container-fluid my-5">
-          <img src="/images/slc.jpg" alt="slc" class='img-fluid rounded-lg my-3'>
+          <img data-aos="fade-right" src="/images/slc.jpg" alt="slc" class='img-fluid rounded-lg my-3'>
           <div class="row">
-            <div class="col-md-8 col-sm-12">
+            <div data-aos="fade-left" class="col-md-8 col-sm-12">
               <h3 class="display-4">
                 Ryerson University
               </h3>
@@ -137,7 +139,7 @@
                 Engineering.
               </p>
             </div>
-            <div class="col p-3">
+            <div data-aos="zoom-out-left" data-aos-delay="500" class="col p-3">
               <img src="/images/ryerson.png" alt="" class="img-fluid rounded-lg my-3">
               <p class="text-secondary font-italic">
                 Gotta love the SLC, it's even got a Starbucks in it!
@@ -149,7 +151,7 @@
         <!-- ------------------------ Characteristics ----------------- -->
         <!-- ------------------------------------------------------------ -->
         <div class="container-fluid my-5">
-          <img src="/images/quote.jpg" alt="" class="img-fluid rounded-lg my-3">
+          <img data-aos="fade-right" src="/images/quote.jpg" alt="" class="img-fluid rounded-lg my-3">
           <!-- <div class="container d-flex justify-content-center">
             <blockquote class="blockquote w-75 ">
               <i class="fas fa-quote-left p-3"></i>
@@ -163,7 +165,7 @@
             </blockquote>
           </div> -->
           <div class="row">
-            <div class="col-md-8 sol-sm-12">
+            <div data-aos="fade-left" class="col-md-8 sol-sm-12">
               <h1 class="display-4">Persona</h1>
               <p>
                 I live by the above quote from Socrates. The only true wisdom is acknowledging that we only know what we
@@ -189,7 +191,7 @@
                 experience.
               </p>
             </div>
-            <div class="col">
+            <div data-aos="zoom-out-left" data-aos-delay="500" class="col">
               <img src="/images/headshot.jpeg" alt="" class="img-fluid rounded-lg my-3">
               <p class="text-secondary font-italic">
                 That's me! Courtesy of my fellow friend/colleague Nael at Shutterstock!
@@ -201,121 +203,123 @@
         <!-- ------------------------ Coding Experience ----------------- -->
         <!-- ------------------------------------------------------------ -->
         <div class="container-fluid my-5">
-          <img src="/images/keyboard.jpeg" alt="" class="img-fluid rounded-lg my-3">
-          <h1 class="display-4 text-nowrap">
-            Coding Experience
-            <p class="blink d-inline p-0 m-0">_</p>
-          </h1>
-          <div class="container-fluid d-flex flex-column flex-md-row">
-            <div class="container text-monospace">
-              <!-- Languages -->
-              <div class="container-fluid">
-                <div class="row py-1">
-                  <div class="col-5 word-fade">
-                    <h5>Javascript</h5>
-                  </div>
-                  <div class="col">
-                    <div class="progress progress-fade" style="height: 3vh;">
-                      <div class="progress-bar p-2 text-left bg-success" role="progressbar"
-                        style="width: 90%; font-size: larger">
-                        90%
+          <img data-aos="fade-right" src="/images/keyboard.jpeg" alt="" class="img-fluid rounded-lg my-3">
+          <div>
+            <h1 data-aos="fade-right" class="display-4 text-nowrap">
+              Coding Experience
+              <p class="blink d-inline p-0 m-0">_</p>
+            </h1>
+            <div class="container-fluid d-flex flex-column flex-md-row">
+              <div data-aos="fade-right" class="container text-monospace">
+                <!-- Languages -->
+                <div class="container-fluid">
+                  <div class="row py-1">
+                    <div class="col-5 word-fade">
+                      <h5>Javascript</h5>
+                    </div>
+                    <div class="col">
+                      <div class="progress progress-fade" style="height: 3vh;">
+                        <div class="progress-bar p-2 text-left bg-success" role="progressbar"
+                          style="width: 90%; font-size: larger">
+                          90%
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="row py-1">
-                  <div class="col-5 word-fade">
-                    <h5>Python</h5>
-                  </div>
-                  <div class="col">
-                    <div class="progress progress-fade" style="height: 3vh;">
-                      <div class="progress-bar p-2 text-left bg-success" role="progressbar"
-                        style="width: 90%; font-size: larger">
-                        90%
+                  <div class="row py-1">
+                    <div class="col-5 word-fade">
+                      <h5>Python</h5>
+                    </div>
+                    <div class="col">
+                      <div class="progress progress-fade" style="height: 3vh;">
+                        <div class="progress-bar p-2 text-left bg-success" role="progressbar"
+                          style="width: 90%; font-size: larger">
+                          90%
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="row py-1">
-                  <div class="col-5 word-fade">
-                    <h5>Java</h5>
-                  </div>
-                  <div class="col">
-                    <div class="progress progress-fade" style="height: 3vh;">
-                      <div class="progress-bar p-2 text-left bg-success" role="progressbar"
-                        style="width: 85%; font-size: larger">
-                        85%
+                  <div class="row py-1">
+                    <div class="col-5 word-fade">
+                      <h5>Java</h5>
+                    </div>
+                    <div class="col">
+                      <div class="progress progress-fade" style="height: 3vh;">
+                        <div class="progress-bar p-2 text-left bg-success" role="progressbar"
+                          style="width: 85%; font-size: larger">
+                          85%
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="row py-1">
-                  <div class="col-5 word-fade">
-                    <h5>Elixir</h5>
-                  </div>
-                  <div class="col">
-                    <div class="progress progress-fade" style="height: 3vh;">
-                      <div class="progress-bar p-2 text-left bg-success" role="progressbar"
-                        style="width: 80%; font-size: larger">
-                        80%
+                  <div class="row py-1">
+                    <div class="col-5 word-fade">
+                      <h5>Elixir</h5>
+                    </div>
+                    <div class="col">
+                      <div class="progress progress-fade" style="height: 3vh;">
+                        <div class="progress-bar p-2 text-left bg-success" role="progressbar"
+                          style="width: 80%; font-size: larger">
+                          80%
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="row py-1">
-                  <div class="col-5 word-fade">
-                    <h5>Bash</h5>
-                  </div>
-                  <div class="col">
-                    <div class="progress progress-fade" style="height: 3vh;">
-                      <div class="progress-bar p-2 text-left bg-success" role="progressbar"
-                        style="width: 75%; font-size: larger">
-                        75%
+                  <div class="row py-1">
+                    <div class="col-5 word-fade">
+                      <h5>Bash</h5>
+                    </div>
+                    <div class="col">
+                      <div class="progress progress-fade" style="height: 3vh;">
+                        <div class="progress-bar p-2 text-left bg-success" role="progressbar"
+                          style="width: 75%; font-size: larger">
+                          75%
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="row py-1">
-                  <div class="col-5 word-fade">
-                    <h5>Ruby</h5>
-                  </div>
-                  <div class="col">
-                    <div class="progress progress-fade" style="height: 3vh;">
-                      <div class="progress-bar p-2 text-left text-dark bg-warning" role="progressbar"
-                        style="width: 70%; font-size: larger">
-                        70%
+                  <div class="row py-1">
+                    <div class="col-5 word-fade">
+                      <h5>Ruby</h5>
+                    </div>
+                    <div class="col">
+                      <div class="progress progress-fade" style="height: 3vh;">
+                        <div class="progress-bar p-2 text-left text-dark bg-warning" role="progressbar"
+                          style="width: 70%; font-size: larger">
+                          70%
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="row py-1">
-                  <div class="col-5 word-fade">
-                    <h5>C</h5>
-                  </div>
-                  <div class="col">
-                    <div class="progress progress-fade" style="height: 3vh;">
-                      <div class="progress-bar p-2 text-left text-dark bg-warning" role="progressbar"
-                        style="width: 65%; font-size: larger">
-                        65%
+                  <div class="row py-1">
+                    <div class="col-5 word-fade">
+                      <h5>C</h5>
+                    </div>
+                    <div class="col">
+                      <div class="progress progress-fade" style="height: 3vh;">
+                        <div class="progress-bar p-2 text-left text-dark bg-warning" role="progressbar"
+                          style="width: 65%; font-size: larger">
+                          65%
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- Info -->
-            <div class="container d-flex flex-column justify-content-center">
-              <h3 class="text-nowrap">
-                A bit more Info
-              </h3>
-              <p class="py-3">
-                As a computer science student, I've been exposed to multiple different programming languages. Each new
-                language varies in many details, such as, syntax, semantics, type-style, flexibility, scalability, and
-                much
-                more. Having a strong understanding of so many different lanuages allows me to have an open-minded
-                approach
-                to every unique problem I encounter. That being said, the higher the percentage of the bar to the left, the more comfortable I am programming in the language. I have a solid understanding of each and every one of the languages I learn, but as all developers do, I have my favorites I prefer to use.
-              </p>
+              <!-- Info -->
+              <div data-aos="fade-left" class="container d-flex flex-column justify-content-center">
+                <h3 class="text-nowrap">
+                  A bit more Info
+                </h3>
+                <p class="py-3">
+                  As a computer science student, I've been exposed to multiple different programming languages. Each new
+                  language varies in many details, such as, syntax, semantics, type-style, flexibility, scalability, and
+                  much
+                  more. Having a strong understanding of so many different lanuages allows me to have an open-minded
+                  approach
+                  to every unique problem I encounter. That being said, the higher the percentage of the bar to the left, the more comfortable I am programming in the language. I have a solid understanding of each and every one of the languages I learn, but as all developers do, I have my favorites I prefer to use.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -326,14 +330,13 @@
     <!-- ------------------------ Services -------------------------- -->
     <!-- ------------------------------------------------------------ -->
     <div id="services" class="container my-5 p-3">
-      web developer, web designer, IT technician, zoom training
       <h1 class="display-3">Services</h1>
       <hr>
       <div class="container d-flex flex-row flex-wrap justify-content-around align-items-center">
         <h1 class="display-4">Web Devlopment</h1>
         <div class="row p-3">
           <!-- Static Web -->
-          <div class="col">
+          <div data-aos="zoom-in-up" class="col">
             <div class="card h-100" style="width: 20rem;">
               <img class="card-img-top" src="/images/static.jpg">
               <div class="card-body border-top">
@@ -344,12 +347,12 @@
                 </p>
               </div>
               <div class="card-footer bg-white" style="border-top: none;">
-                <button onclick=inquire() class="btn btn-info btn-block">Inquire</button>
+                <button onclick="inquire(`Could you build me a website?`)" class="btn btn-info btn-block">Inquire</button>
               </div>
             </div>
           </div>
           <!-- Dynamic Web -->
-          <div class="col">
+          <div data-aos="zoom-in-up" class="col">
             <div class="card h-100" style="width: 20rem;">
               <img class="card-img-top" src="/images/dynamic.jpg">
               <div class="card-body border-top">
@@ -360,23 +363,23 @@
                 </p>
               </div>
               <div class="card-footer bg-white" style="border-top: none;">
-                <button onclick=inquire() class="btn btn-info btn-block">Inquire</button>
+                <button onclick="inquire(`Could you build me a website?`)" class="btn btn-info btn-block">Inquire</button>
               </div>
             </div>
           </div>
           <!-- Maintenance -->
-          <div class="col">
+          <div data-aos="zoom-in-up" class="col">
             <div class="card h-100" style="width: 20rem;">
               <img class="card-img-top" src="/images/maintenance.jpg">
               <div class="card-body border-top">
                 <h5 class="card-title">Website Maintenance</h5>
                 <p class="card-text">
                   Already have a website, but it's a bit outdated? I can redesign the front end interface to bring your
-                  website back up to speed and leave your clients with a smile on their face!
+                  website back up to speed and leave your visitors with a smile on their face!
                 </p>
               </div>
               <div class="card-footer bg-white" style="border-top: none;">
-                <button onclick=inquire() class="btn btn-info btn-block">Inquire</button>
+                <button onclick="inquire(`Help! My website needs a touch up!`)" class="btn btn-info btn-block">Inquire</button>
               </div>
             </div>
           </div>
@@ -384,7 +387,7 @@
         <h1 class="display-4 mt-3">Technical Training & Support</h1>
         <div class="row p-3">
           <!-- Zoom -->
-          <div class="col">
+          <div data-aos="zoom-in-up" class="col">
             <div class="card h-100" style="width: 20rem;">
               <img class="card-img-top" src="/images/zoom.png">
               <div class="card-body border-top">
@@ -395,12 +398,12 @@
                 </p>
               </div>
               <div class="card-footer bg-white" style="border-top: none;">
-                <button onclick=inquire() class="btn btn-info btn-block">Inquire</button>
+                <button onclick="inquire(`I need Zoom Training ASAP!`)" class="btn btn-info btn-block">Inquire</button>
               </div>
             </div>
           </div>
           <!-- IT Support Line -->
-          <div class="col">
+          <div data-aos="zoom-in-up" class="col">
             <div class="card h-100" style="width: 20rem;">
               <img class="card-img-top" src="/images/technician.jpg">
               <div class="card-body border-top">
@@ -411,12 +414,12 @@
                 </p>
               </div>
               <div class="card-footer bg-white" style="border-top: none;">
-                <button onclick=inquire() class="btn btn-info btn-block">Inquire</button>
+                <button onclick="inquire(`Help!! My laptop stopped working!`)" class="btn btn-info btn-block">Inquire</button>
               </div>
             </div>
           </div>
           <!-- Tutoring -->
-          <div class="col">
+          <div data-aos="zoom-in-up" class="col">
             <div class="card h-100" style="width: 20rem;">
               <img class="card-img-top" src="/images/webdev-card.jpg">
               <div class="card-body border-top">
@@ -428,7 +431,7 @@
                 </p>
               </div>
               <div class="card-footer bg-white" style="border-top: none;">
-                <button onclick=inquire() class="btn btn-info btn-block">Inquire</button>
+                <button onclick="inquire(`Can you help me learn Javascript???`)" class="btn btn-info btn-block">Inquire</button>
               </div>
             </div>
           </div>
@@ -449,7 +452,7 @@
           <!-- Form Area -->
           <div class="row">
             <!-- Form -->
-            <div class="col-sm-12 col-md-6 mb-4">
+            <div data-aos="zoom-in-right" class="col-sm-12 col-md-6 mb-4">
               <form id="contact-form">
                 <div class="form-group">
                   <label for="name">Name</label>
@@ -457,11 +460,11 @@
                 </div>
                 <div class="form-group">
                   <label for="subject">Subject</label>
-                  <input type="text" class="form-control" id="subject" placeholder="Help! I need a website!!!" />
+                  <input type="text" class="form-control" id="subject" placeholder="Your Inquiry Here" />
                 </div>
                 <div class="form-group">
                   <textarea name="content" id="content" class="form-control" style="width: 100%; height: 15vh"
-                    placeholder="Leave your message here..."></textarea>
+                    placeholder="Your Message Here"></textarea>
                 </div>
                 <button type="button" class="btn btn-info btn-block py-2 rounded-lg" onclick="sendEmail()">
                   Send!
@@ -472,7 +475,7 @@
               </form>
             </div>
             <!-- Links -->
-            <div class="col-sm-12 col-md-6 mt-4">
+            <div data-aos="zoom-in-left" class="col-sm-12 col-md-6 mt-4">
               <!-- Linkedin -->
               <div class="row">
                 <div class="media">
@@ -566,7 +569,9 @@
   <!-- Font Awesome Icon Toolkit -->
   <script src="https://kit.fontawesome.com/4dd656e5a3.js" crossorigin="anonymous"></script>
   <!-- GSAP Animation Library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.2/gsap.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.2/gsap.min.js"></script> -->
+  <!-- AOS Scripts -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <!-- Custom Scripts -->
   <script src="script.js"></script>
 </body>

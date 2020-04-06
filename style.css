@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 #showcase {
   position: relative;
   z-index: 0;
