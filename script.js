@@ -4,20 +4,18 @@ var tl = gsap.timeline({defaults: {
 }})
 
 tl.from('#showcase', {
-    ease: 'expo.inOut'
+    ease: 'expo.expo'
 })
 .from('.anim1', {
-    ease: 'power2.in',
+    ease: 'power2.inOut',
     stagger: 0.5
 })
-.from('.anim2', {
-    delay: 0.2,
-    y: 10,
-    ease: 'expo.in',
-    stagger: 0.5
-})
+// .from('.anim2', {
+//     y: 10,
+//     ease: 'expo.in',
+//     stagger: 0.5
+// })
 .from('.popup', {
-    delay: 0.2,
     y: 10,
     ease: 'power4.out',
     stagger: 0.2
