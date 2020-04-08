@@ -1,4 +1,4 @@
-AOS.init()
+AOS.init({duration: 1250})
 
 function sendEmail() {
     let name = document.getElementById('name').value

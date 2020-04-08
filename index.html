@@ -62,53 +62,53 @@
     <div id="spotlight" class="container my-5 p-3">
       <h1 class=" display-3">Spotlight</h1>
       <hr>
-      <div class="row p-3 flex-column flex-md-row">
-        <!-- ------------------------------------------------------------ -->
-        <!-- ------------------------ Experience ------------------------ -->
-        <!-- ------------------------------------------------------------ -->
-        <div data-aos="zoom-in-up" data-aos-delay="400" data-aos-duration="750" class="card p-3 col-sm m-2 ">
-          <div class="card-body border-top">
-            <h5 class="card-title">Experience</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Web Development Projects</h6>
-            <hr />
-            <ul class="list-group-flush p-0 m-0">
-              <li class="list-group-item"><a class="text-reset " href="https://dianegee.ca">Diane Gee Arbitrations</a>
-              </li>
-              <li class="list-group-item"><a class="text-reset " href="https://github.com/macday/recipeme">RecipeMe</a>
-              </li>
-              <li class="list-group-item"><a class="text-reset " href="https://github.com/macday/Vitamin-App">Vitamin
-                  App</a></li>
-            </ul>
+      <div class="d-flex justify-content-around flex-wrap">
+            <!-- Zoom Highlight -->
+            <div data-aos="zoom-in-up" class="my-3 p-1">
+              <div class="card h-100" style="width: 20rem;">
+                <img class="card-img-top" src="/images/zoom.png">
+                <div class="card-body border-top">
+                  <h5 class="card-title">Zoom Training & Support</h5>
+                  <p class="card-text">
+                    My colleague and I are currently offering Zoom training to those in need of learning the basics. We also offer facilitation services for Arbitrations & Mediations. 
+                  </p>
+                </div>
+                <div class="card-footer bg-white" style="border-top: none;">
+                  <button onclick="inquire(`I need Zoom training, can you help?`)" class="btn btn-info btn-block">Inquire</button>
+                </div>
+              </div>
+            </div>
+            <!-- About Me -->
+            <div data-aos="zoom-in-up" class="my-3 p-1">
+              <div class="card h-100" style="width: 20rem;">
+                <img class="card-img-top" src="/images/headshot.jpeg">
+                <div class="card-body border-top">
+                  <h5 class="card-title">About Me</h5>
+                  <p class="card-text">
+                    A second year computer science student at Ryerson University. I am pursuing freelance development and would love some new clients! Scroll down to contact me!
+                  </p>
+                </div>
+                <div class="card-footer bg-white" style="border-top: none;">
+                  <button onclick="inquire(`Hey, I like your website!`)" class="btn btn-info btn-block">Contact Me</button>
+                </div>
+              </div>
+            </div>
+            <!-- Maintenance -->
+            <div data-aos="zoom-in-up" class="my-3 p-1">
+              <div class="card h-100" style="width: 20rem;">
+                <img class="card-img-top" src="/images/maintenance.jpg">
+                <div class="card-body border-top">
+                  <h5 class="card-title">Freelance Web Development</h5>
+                  <p class="card-text">
+                    I'm actively looking for clients to take on who may need an entirely new website, a new style, or those who have a website but it's out of date and in need of a facelift!
+                  </p>
+                </div>
+                <div class="card-footer bg-white" style="border-top: none;">
+                  <button onclick="inquire(`Help! My website needs a touch up!`)" class="btn btn-info btn-block">Inquire</button>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <!-- ------------------------------------------------------------ -->
-        <!-- ------------------------ Current Project ------------------- -->
-        <!-- ------------------------------------------------------------ -->
-        <div data-aos="zoom-in-up" data-aos-delay="400" data-aos-duration="750" class="card p-3 col-sm m-2 ">
-          <div class="card-body border-top">
-            <h5 class="card-title">Current Works</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Zoom Training & Freelance Web Development</h6>
-            <hr />
-            <p>
-              Currently offering Zoom training to those who are new to the platform or in need of some extra know-how. I'm also a freelance web developer actively looking for new clients!
-            </p>
-          </div>
-        </div>
-        <!-- ------------------------------------------------------------ -->
-        <!-- ------------------------ Education ------------------------- -->
-        <!-- ------------------------------------------------------------ -->
-        <div data-aos="zoom-in-up" data-aos-delay="400" data-aos-duration="750" class="card p-3 col-sm m-2 ">
-          <div class="card-body border-top">
-            <h5 class="card-title">Education</h5>
-            <h6 class="card-subtitle mb-2 text-muted">
-              Ryerson Univeristy
-            </h6>
-            <hr />
-            <p>
-              Currently enrolled in Computer Science and finishing my second year. I'm enrolled in the coop program and would love to find a position for this summer term If you our anyone you know has open coop placements, hit my line!
-            </p>
-          </div>
-        </div>
       </div>
     </div>
 
@@ -129,17 +129,15 @@
               <h3 class="display-4">
                 Ryerson University
               </h3>
-              <p class="ml-2">
+              <p class="ml-2 mt-3">
                 Studying Computer Science at Ryerson University has been one of the best experiences of my life. The
                 liveliness of downtown Toronto is usually so daunting, but also so euphoric. From studying at the SLC to
                 writing exams in the DCC, every aspect of this school has been exhilirating. Data Structures & Algorithms,
                 Intro to C & UNIX, Comparative Programming Languaes - just a few of my favorite classes to date - have
-                broadened my scope of understanding and analyzing problems. Then to top it off, learning how to tackle any
-                problem and break it down into comprehensive steps, all whil providing a sound solution with Software
-                Engineering.
+                broadened my scope of understanding and analyzing problems.
               </p>
             </div>
-            <div data-aos="zoom-out-left" data-aos-delay="500" class="col p-3">
+            <div data-aos="zoom-out-left" data-aos-delay="250" class="col p-3">
               <img src="/images/ryerson.png" alt="" class="img-fluid rounded-lg my-3">
               <p class="text-secondary font-italic">
                 Gotta love the SLC, it's even got a Starbucks in it!
@@ -168,30 +166,10 @@
             <div data-aos="fade-left" class="col-md-8 sol-sm-12">
               <h1 class="display-4">Persona</h1>
               <p>
-                I live by the above quote from Socrates. The only true wisdom is acknowledging that we only know what we
-                don't know.
-                <ol>
-                  <li>
-                    When I start a task, I won't rest peacefully until that task is done properly and to my fullest
-                    capacity
-                  </li>
-                  <br>
-                  <li>
-                    I will do my research to ensure that going forward with a project, I will be making educated decisions
-                    on how to reach the projects end goal.
-                  </li>
-                  <br>
-                  <li>
-                    Time is money. I work my hardest to stay on task and on time. I will not value your time any less than
-                    I value mine.
-                  </li>
-                </ol>
-                Being in such an ever changing industry it is my responsibility to remain agile, adapting to any changes
-                in the world of technology and do my best to ensure that all my clients recieve the best possible
-                experience.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident magnam architecto earum aperiam sed facere placeat aspernatur quis labore veritatis velit nobis nemo, rerum quos soluta, nam accusantium dicta? Iste nemo unde repudiandae quas cupiditate saepe eligendi mollitia omnis dolore quos esse dicta quidem non impedit, optio soluta similique. Blanditiis accusantium doloremque odio, ipsa repellat repellendus quidem perferendis eos. Omnis sint tenetur ut, inventore hic enim harum, ipsum aut architecto excepturi debitis dolorum accusamus pariatur temporibus consequuntur vitae ab sunt alias, laborum rerum dolore possimus. Possimus iusto, eos sunt nostrum reiciendis repudiandae. Magni fuga quas eveniet reprehenderit provident doloribus explicabo!
               </p>
             </div>
-            <div data-aos="zoom-out-left" data-aos-delay="500" class="col">
+            <div data-aos="zoom-out-left" data-aos-delay="250" class="col">
               <img src="/images/headshot.jpeg" alt="" class="img-fluid rounded-lg my-3">
               <p class="text-secondary font-italic">
                 That's me! Courtesy of my fellow friend/colleague Nael at Shutterstock!
@@ -212,8 +190,8 @@
             <div class="container-fluid d-flex flex-column flex-md-row">
               <div data-aos="fade-right" class="container text-monospace">
                 <!-- Languages -->
-                <div class="container-fluid">
-                  <div class="row py-1">
+                <div class="container-fluid py-3">
+                  <div class="row py-2">
                     <div class="col-5 word-fade">
                       <h5>Javascript</h5>
                     </div>
@@ -226,7 +204,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row py-1">
+                  <div class="row py-2">
                     <div class="col-5 word-fade">
                       <h5>Python</h5>
                     </div>
@@ -239,7 +217,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row py-1">
+                  <div class="row py-2">
                     <div class="col-5 word-fade">
                       <h5>Java</h5>
                     </div>
@@ -252,7 +230,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row py-1">
+                  <div class="row py-2">
                     <div class="col-5 word-fade">
                       <h5>Elixir</h5>
                     </div>
@@ -265,7 +243,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row py-1">
+                  <div class="row py-2">
                     <div class="col-5 word-fade">
                       <h5>Bash</h5>
                     </div>
@@ -278,7 +256,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row py-1">
+                  <div class="row py-2">
                     <div class="col-5 word-fade">
                       <h5>Ruby</h5>
                     </div>
@@ -291,7 +269,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row py-1">
+                  <div class="row py-2">
                     <div class="col-5 word-fade">
                       <h5>C</h5>
                     </div>
@@ -334,104 +312,106 @@
       <hr>
       <div class="container d-flex flex-row flex-wrap justify-content-around align-items-center">
         <h1 class="display-4">Web Devlopment</h1>
-        <div class="row p-3">
-          <!-- Static Web -->
-          <div data-aos="zoom-in-up" class="col">
-            <div class="card h-100" style="width: 20rem;">
-              <img class="card-img-top" src="/images/static.jpg">
-              <div class="card-body border-top">
-                <h5 class="card-title">Static Website</h5>
-                <p class="card-text">
-                  Need a basic website? Using pure HTML, CSS, Javascript, and hosting services I can get your site up
-                  and running!
-                </p>
+        <div class="container d-flex flex-column">
+          <div class="p-3 d-flex justify-content-around flex-wrap">
+            <!-- Static Web -->
+            <div data-aos="zoom-in-up" class="my-3 p-1">
+              <div class="card h-100" style="width: 20rem;">
+                <img class="card-img-top" src="/images/static.jpg">
+                <div class="card-body border-top">
+                  <h5 class="card-title">Static Website</h5>
+                  <p class="card-text">
+                    Need a basic website? Using pure HTML, CSS, Javascript, and hosting services I can get your site up
+                    and running!
+                  </p>
+                </div>
+                <div class="card-footer bg-white" style="border-top: none;">
+                  <button onclick="inquire(`Could you build me a website?`)" class="btn btn-info btn-block">Inquire</button>
+                </div>
               </div>
-              <div class="card-footer bg-white" style="border-top: none;">
-                <button onclick="inquire(`Could you build me a website?`)" class="btn btn-info btn-block">Inquire</button>
+            </div>
+            <!-- Dynamic Web -->
+            <div data-aos="zoom-in-up" class="my-3 p-1">
+              <div class="card h-100" style="width: 20rem;">
+                <img class="card-img-top" src="/images/dynamic.jpg">
+                <div class="card-body border-top">
+                  <h5 class="card-title">Dynamic Website</h5>
+                  <p class="card-text">
+                    Need something like a blog? Using WordPress, MySQL, and/or PHP along with hosting services I can get
+                    your new blog started and run you through managing it!
+                  </p>
+                </div>
+                <div class="card-footer bg-white" style="border-top: none;">
+                  <button onclick="inquire(`Could you build me a website?`)" class="btn btn-info btn-block">Inquire</button>
+                </div>
+              </div>
+            </div>
+            <!-- Maintenance -->
+            <div data-aos="zoom-in-up" class="my-3 p-1">
+              <div class="card h-100" style="width: 20rem;">
+                <img class="card-img-top" src="/images/maintenance.jpg">
+                <div class="card-body border-top">
+                  <h5 class="card-title">Website Maintenance</h5>
+                  <p class="card-text">
+                    Already have a website, but it's a bit outdated? I can redesign the front end interface to bring your
+                    website back up to speed and leave your visitors with a smile on their face!
+                  </p>
+                </div>
+                <div class="card-footer bg-white" style="border-top: none;">
+                  <button onclick="inquire(`Help! My website needs a touch up!`)" class="btn btn-info btn-block">Inquire</button>
+                </div>
               </div>
             </div>
           </div>
-          <!-- Dynamic Web -->
-          <div data-aos="zoom-in-up" class="col">
-            <div class="card h-100" style="width: 20rem;">
-              <img class="card-img-top" src="/images/dynamic.jpg">
-              <div class="card-body border-top">
-                <h5 class="card-title">Dynamic Website</h5>
-                <p class="card-text">
-                  Need something like a blog? Using WordPress, MySQL, and/or PHP along with hosting services I can get
-                  your new blog started and run you through managing it!
-                </p>
-              </div>
-              <div class="card-footer bg-white" style="border-top: none;">
-                <button onclick="inquire(`Could you build me a website?`)" class="btn btn-info btn-block">Inquire</button>
-              </div>
-            </div>
-          </div>
-          <!-- Maintenance -->
-          <div data-aos="zoom-in-up" class="col">
-            <div class="card h-100" style="width: 20rem;">
-              <img class="card-img-top" src="/images/maintenance.jpg">
-              <div class="card-body border-top">
-                <h5 class="card-title">Website Maintenance</h5>
-                <p class="card-text">
-                  Already have a website, but it's a bit outdated? I can redesign the front end interface to bring your
-                  website back up to speed and leave your visitors with a smile on their face!
-                </p>
-              </div>
-              <div class="card-footer bg-white" style="border-top: none;">
-                <button onclick="inquire(`Help! My website needs a touch up!`)" class="btn btn-info btn-block">Inquire</button>
+          <h1 class="display-4 mt-3">Technical Training & Support</h1>
+          <div class="p-3 d-flex justify-content-around flex-wrap">
+            <!-- Zoom -->
+            <div data-aos="zoom-in-up" class="my-3 p-1">
+              <div class="card h-100" style="width: 20rem;">
+                <img class="card-img-top" src="/images/zoom.png">
+                <div class="card-body border-top">
+                  <h5 class="card-title">Zoom Training</h5>
+                  <p class="card-text">
+                    Just starting out using the Zoom platform? Need some training to get started? I offer basic training
+                    for getting started with joining and hosting meetings!
+                  </p>
+                </div>
+                <div class="card-footer bg-white" style="border-top: none;">
+                  <button onclick="inquire(`I need Zoom Training ASAP!`)" class="btn btn-info btn-block">Inquire</button>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <h1 class="display-4 mt-3">Technical Training & Support</h1>
-        <div class="row p-3">
-          <!-- Zoom -->
-          <div data-aos="zoom-in-up" class="col">
-            <div class="card h-100" style="width: 20rem;">
-              <img class="card-img-top" src="/images/zoom.png">
-              <div class="card-body border-top">
-                <h5 class="card-title">Zoom Training</h5>
-                <p class="card-text">
-                  Just starting out using the Zoom platform? Need some training to get started? I offer basic training
-                  for getting started with joining and hosting meetings!
-                </p>
-              </div>
-              <div class="card-footer bg-white" style="border-top: none;">
-                <button onclick="inquire(`I need Zoom Training ASAP!`)" class="btn btn-info btn-block">Inquire</button>
+            <!-- IT Support Line -->
+            <div data-aos="zoom-in-up" class="my-3 p-1">
+              <div class="card h-100" style="width: 20rem;">
+                <img class="card-img-top" src="/images/technician.jpg">
+                <div class="card-body border-top">
+                  <h5 class="card-title">Tech Support</h5>
+                  <p class="card-text">
+                    I'm familiar with a vast amount of applications, operating systems, and hardware so you can trust me
+                    when it comes to figuring out a solution to your tech issues!
+                  </p>
+                </div>
+                <div class="card-footer bg-white" style="border-top: none;">
+                  <button onclick="inquire(`Help!! My laptop stopped working!`)" class="btn btn-info btn-block">Inquire</button>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- IT Support Line -->
-          <div data-aos="zoom-in-up" class="col">
-            <div class="card h-100" style="width: 20rem;">
-              <img class="card-img-top" src="/images/technician.jpg">
-              <div class="card-body border-top">
-                <h5 class="card-title">Tech Support</h5>
-                <p class="card-text">
-                  I'm familiar with a vast amount of applications, operating systems, and hardware so you can trust me
-                  when it comes to figuring out a solution to your tech issues!
-                </p>
-              </div>
-              <div class="card-footer bg-white" style="border-top: none;">
-                <button onclick="inquire(`Help!! My laptop stopped working!`)" class="btn btn-info btn-block">Inquire</button>
-              </div>
-            </div>
-          </div>
-          <!-- Tutoring -->
-          <div data-aos="zoom-in-up" class="col">
-            <div class="card h-100" style="width: 20rem;">
-              <img class="card-img-top" src="/images/webdev-card.jpg">
-              <div class="card-body border-top">
-                <h5 class="card-title">Program Tutoring</h5>
-                <p class="card-text">
-                  As a computer science student I have a very strong handle on many of the top programming languages
-                  used today! If you need some help finding out where to start feel free to have a chat with me about
-                  it.
-                </p>
-              </div>
-              <div class="card-footer bg-white" style="border-top: none;">
-                <button onclick="inquire(`Can you help me learn Javascript???`)" class="btn btn-info btn-block">Inquire</button>
+            <!-- Tutoring -->
+            <div data-aos="zoom-in-up" class="my-3 p-1">
+              <div class="card h-100" style="width: 20rem;">
+                <img class="card-img-top" src="/images/webdev-card.jpg">
+                <div class="card-body border-top">
+                  <h5 class="card-title">Program Tutoring</h5>
+                  <p class="card-text">
+                    As a computer science student I have a very strong handle on many of the top programming languages
+                    used today! If you need some help finding out where to start feel free to have a chat with me about
+                    it.
+                  </p>
+                </div>
+                <div class="card-footer bg-white" style="border-top: none;">
+                  <button onclick="inquire(`Can you help me learn Javascript???`)" class="btn btn-info btn-block">Inquire</button>
+                </div>
               </div>
             </div>
           </div>

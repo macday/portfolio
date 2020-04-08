@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+p {
+  line-height: 1.8rem;
+}
+
 #showcase {
   position: relative;
   z-index: 0;
