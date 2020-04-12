@@ -1,4 +1,4 @@
-AOS.init({duration: 1250})
+AOS.init({duration: 1000})
 
 function sendEmail() {
     let name = document.getElementById('name').value
@@ -10,4 +10,25 @@ function sendEmail() {
 function inquire(service) {
     document.getElementById('subject').value = service
     document.getElementById("contact").scrollIntoView()
+}
+
+function toggleMenu() {
+    var nav = document.getElementById("nav-panel")
+    var toggle = document.getElementById("menu-toggle")
+    if (nav.style.display === "none") {
+        toggle.classList.add("rotate-right")
+        toggle.classList.remove("rotate-left")
+
+        nav.style.display = "flex"
+        nav.classList.add("slide-down")
+        nav.classList.remove("slide-up")
+    } else {
+        toggle.classList.add("rotate-left")
+        toggle.classList.remove("rotate-right")
+
+        nav.classList.add("slide-up")
+        nav.classList.remove("slide-down")
+        setTimeout(() => {}, 1000)
+        nav.style.display = "none"
+    }
 }

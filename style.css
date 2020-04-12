@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 p {
@@ -20,12 +21,54 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("./images/webdev.jpg"); /* iamge, repeat, position, position, cover */
+  background-image: url("./images/marvin-meyer-SYTO3xs06fU-unsplash.jpg"); /* iamge, repeat, position, position, cover */
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
   filter: brightness(0.25);
   z-index: -1;
+}
+
+#nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100vw;
+  height: 10vh;
+  padding: 0;
+  margin: 0;
+}
+
+.icon {
+  position: absolute;
+  top: 1vh;
+  left: 1vh;
+  z-index: 10;
+
+  transition: all .25s ease-in-out;
+  background: transparent;
+  color: black;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+#nav-panel {
+  display: none;
+  background: rgba(200, 200, 200, 0.95);
+  background: rgba(200, 200, 200, 0.95);
+  padding-left: 3vh;
+  transition: all .25s ease-in-out;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+#nav-panel a {
+  text-decoration: none;
 }
 
 .card-img-top {
@@ -38,11 +81,80 @@ p {
   background-color: #dedede50;
 }
 
+.grow { transition: all .25s ease-in-out; }
+.grow:hover { transform: scale(2); }
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .blink {
+    animation: blink infinite 1s ease-in-out;
+  }
+  
+  .rotate-right {
+    animation: rotate-right .25s ease-in-out forwards;
+  }
+  
+  .rotate-left {
+    animation: rotate-left .25s ease-in-out forwards;
+  }
+
+  .slide-down {
+    animation: slide-down .25s ease-in-out forwards;
+  }
+  
+  .slide-up {
+    animation: slide-up .25s ease-in-out forwards;
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes rotate-right {
+  to {
+    transform: rotate(135deg);
+  }
+}
+
+@keyframes rotate-left {
+  from {
+    transform: rotate(135deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    height: 0;
+  } 
+  to {
+    height: 100%;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    height: 100%;
+  } 
+  to {
+    height: 0;
+  }
+}
+
 ::-webkit-scrollbar {
-  width: 5px;
-  background: transparent;
+  width: 8px;
+  background: white;
+  background: linear-gradient( rgba(42,42,47,1) 0%, rgba(95,15,101,1) 15%, rgba(142,53,113,1) 30%, rgba(123,132,185,1) 45%, rgba(44,187,108,1) 60%, rgba(255,177,0,1) 75%, rgba(240,23,80,0.9374124649859944) 90%);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #999;
+  background-color: black;
 }
