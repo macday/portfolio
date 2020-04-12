@@ -1,4 +1,4 @@
-AOS.init({duration: 1000})
+AOS.init({ duration: 1000 })
 
 function sendEmail() {
     let name = document.getElementById('name').value
@@ -15,11 +15,11 @@ function inquire(service) {
 function toggleMenu() {
     var nav = document.getElementById("nav-panel")
     var toggle = document.getElementById("menu-toggle")
-    if (nav.style.display === "none") {
+    if (nav.style.top === "-100%") {
         toggle.classList.add("rotate-right")
         toggle.classList.remove("rotate-left")
 
-        nav.style.display = "flex"
+        nav.style.top = "0"
         nav.classList.add("slide-down")
         nav.classList.remove("slide-up")
     } else {
@@ -28,7 +28,6 @@ function toggleMenu() {
 
         nav.classList.add("slide-up")
         nav.classList.remove("slide-down")
-        setTimeout(() => {}, 1000)
-        nav.style.display = "none"
+        nav.style.top = "-100%"
     }
 }
