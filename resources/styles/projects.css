@@ -1,0 +1,63 @@
+#recipeme::before {
+    background-image: url("https://placekitten.com/200/400");
+}
+
+#arbitration::before {
+    background-image: url("https://placekitten.com/400/600");
+}
+
+#nike {
+
+}
+
+#calc {
+    
+}
+
+.box {
+    position: relative;
+    z-index: 0;
+    display: block;
+    box-sizing: border-box;
+    width: 30rem;
+    height: 30rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    transition: all 0.1s ease-in-out;
+}
+
+.box:hover {
+    z-index: 100;
+    transform: scale(1.1);
+}
+.box:hover::before{
+    filter: brightness(0.6);
+}
+
+.box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30rem;
+    height: 30rem;
+    background-image: url("https://placekitten.com/300/300");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.25);
+    z-index: -1;
+    transition: all 0.1s ease-in-out;
+}
+
+@media (max-width: 600px) {
+    .box {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .box::before {
+        width: 20rem;
+        height: 20rem;
+    }
+}

@@ -15,7 +15,8 @@ function inquire(service) {
 function toggleMenu() {
     var nav = document.getElementById("nav-panel")
     var toggle = document.getElementById("menu-toggle")
-    if (nav.style.top === "-100%") {
+    if (nav.style.top === "-100%" || nav.style.visibility === "hidden") {
+        nav.style.visibility = "visible"
         toggle.classList.add("rotate-right")
         toggle.classList.remove("rotate-left")
 
@@ -30,4 +31,15 @@ function toggleMenu() {
         nav.classList.remove("slide-down")
         nav.style.top = "-100%"
     }
+}
+
+function closeMenu() {
+    var nav = document.getElementById("nav-panel")
+    var toggle = document.getElementById("menu-toggle")
+    toggle.classList.add("rotate-left")
+    toggle.classList.remove("rotate-right")
+
+    nav.classList.add("slide-up")
+    nav.classList.remove("slide-down")
+    nav.style.top = "-100%"
 }

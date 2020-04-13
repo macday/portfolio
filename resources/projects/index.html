@@ -17,7 +17,7 @@
       crossorigin="anonymous"
     />
     <!-- Style sheet -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/resources/styles/projects.css" />
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Icon -->
@@ -100,17 +100,57 @@
   <!-- ------------------------------------------------------------ -->
   <!-- ------------------------ Body Content ---------------------- -->
   <!-- ------------------------------------------------------------ -->
-  <body>
-    <div id="projects" class="container">
-      <span>
-        Recipe Me
-      </span>
-      <span>
-        Vitamin App
-      </span>
-      <span>
-        Diane Gee Arbitrations
-      </span>
+  <body style="min-height: 100vh;">
+    <div class="title text-center d-flex align-items-center justify-content-center">
+      <a href="/index.html" class="btn" style="box-shadow: none;">
+        <h1>
+          <i class="fa fa-chevron-left"></i>
+        </h1>
+      </a>
+      <h1 class="display-2 d-inline text-center flex-fill">
+        Projects
+      </h1>
+    </div>
+    <br>
+    <br>
+    <div id="projects" class="container d-flex flex-column">
+      <div class="d-flex flex-row flex-wrap justify-content-center align-items-center">
+        <div id="recipeme" class="box p-5 btn text-white text-left" onclick="myFunction()">
+          <h1 class="text-center">
+            Recipe Me
+          </h1>
+          <p>
+            This project was built with React, Cheerio, and Axios. Designed to have the user enter a link from one of the available sites and spit out the corresponding recipe.
+          </p>
+        </div>
+        <div id="arbitration" class="box p-5 btn text-white text-left" onclick="myFunction()">
+          <h1 class="text-center">
+            Diane Gee Arbitrations
+          </h1>
+          <p>
+            A client website built using pure HTML, CSS, and Javscript. Diane is a Toronto local arbitrator & mediator.
+          </p>
+        </div>
+      </div>
+      
+      <div class="d-flex flex-row flex-wrap justify-content-center align-items-center">
+        <div id="recipeme" class="box p-5 btn text-white text-left" onclick="myFunction()">
+          <h1 class="text-center">
+            Nike Remodel
+          </h1>
+          <p>
+            A twist on the normal landing page. Tinkering with different animations and stlyes.
+          </p>
+        </div>
+        <div id="arbitration" class="box p-5 btn text-white text-left" onclick="myFunction()">
+          <h1 class="text-center">
+            Calculator
+          </h1>
+          <p>
+            A client website built using pure HTML, CSS, and Javscript. Diane is a Toronto local arbitrator & mediator.
+          </p>
+        </div>
+      </div>
     </div>
 
     <!-- Bootstrap Scripts -->

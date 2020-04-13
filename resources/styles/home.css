@@ -21,7 +21,7 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("./images/marvin-meyer-SYTO3xs06fU-unsplash.jpg"); /* iamge, repeat, position, position, cover */
+  background-image: url("/resources/images/marvin-meyer-SYTO3xs06fU-unsplash.jpg"); /* iamge, repeat, position, position, cover */
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -36,11 +36,12 @@ p {
   z-index: 5;
   width: 100vw;
   height: 20vh;
+  min-height: 10rem;
   padding: 0;
   margin: 0;
 }
 
-.icon {
+#nav .icon {
   position: absolute;
   top: 1vh;
   left: 1vh;
@@ -55,9 +56,9 @@ p {
 }
 
 #nav-panel {
+  visibility: hidden;
   height: 100%;
   background: rgba(15, 15, 15, 0.75);
-  padding-left: 3vh;
   transition: all 0.25s ease-in-out;
   display: flex;
   flex-direction: row;
@@ -65,7 +66,8 @@ p {
   justify-content: space-around;
   align-items: center;
   margin: 0;
-  padding: 0px 20vw;
+  padding: 0px 10rem;
+  top: -100%;
 }
 
 #nav-panel a {
@@ -87,6 +89,16 @@ p {
 }
 .grow:hover {
   transform: scale(2);
+}
+
+@media (max-width: 600px) {
+  #nav {
+    height: 20rem;
+  }
+
+  #nav-panel {
+    padding: 0 5rem;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -126,6 +138,7 @@ p {
     transform: rotate(0deg);
   }
   to {
+    color: #f4f4f4;
     transform: rotate(135deg);
   }
 }
@@ -135,6 +148,7 @@ p {
     transform: rotate(135deg);
   }
   to {
+    color: black;
     transform: rotate(0deg);
   }
 }
@@ -144,14 +158,14 @@ p {
     transform: translateY(-100%);
   }
   to {
-    transform: translateY(0px);
+    transform: translateY(0);
   }
 }
 
 @keyframes slide-up {
-  from {
-    transform: translateY(0px);
-  }
+  /* from {
+    transform: translateY(0);
+  } */
   to {
     transform: translateY(-100%);
   }

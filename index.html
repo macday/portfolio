@@ -2,7 +2,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="McKenzie Day" />
+    <meta name="description" content="Portfolio of McKenzie Day" />
     <meta
       name="keywords"
       content="freelance,web developer, webdev, wen designer, UX/UI designer, McKenzie Day, HTML, CSS, JavaScript"
@@ -17,80 +17,79 @@
       crossorigin="anonymous"
     />
     <!-- Style sheet -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/resources/styles/home.css" />
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Icon -->
     <link
       rel="apple-touch-icon"
       sizes="57x57"
-      href="/images/icons/apple-icon-57x57.png"
+      href="/resources/images/icons/apple-icon-57x57.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="60x60"
-      href="/images/icons/apple-icon-60x60.png"
+      href="/resources/images/icons/apple-icon-60x60.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="72x72"
-      href="/images/icons/apple-icon-72x72.png"
+      href="/resources/images/icons/apple-icon-72x72.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="76x76"
-      href="/images/icons/apple-icon-76x76.png"
+      href="/resources/images/icons/apple-icon-76x76.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="114x114"
-      href="/images/icons/apple-icon-114x114.png"
+      href="/resources/images/icons/apple-icon-114x114.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="120x120"
-      href="/images/icons/apple-icon-120x120.png"
+      href="/resources/images/icons/apple-icon-120x120.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="144x144"
-      href="/images/icons/apple-icon-144x144.png"
+      href="/resources/images/icons/apple-icon-144x144.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="152x152"
-      href="/images/icons/apple-icon-152x152.png"
+      href="/resources/images/icons/apple-icon-152x152.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="/images/icons/apple-icon-180x180.png"
+      href="/resources/images/icons/apple-icon-180x180.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="192x192"
-      href="/images/icons/android-icon-192x192.png"
+      href="/resources/images/icons/android-icon-192x192.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/images/icons/favicon-32x32.png"
+      href="/resources/images/icons/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="96x96"
-      href="/images/icons/favicon-96x96.png"
+      href="/resources/images/icons/favicon-96x96.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="/images/icons/favicon-16x16.png"
+      href="/resources/images/icons/favicon-16x16.png"
     />
-    <link rel="manifest" href="/manifest.json" />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
@@ -109,31 +108,31 @@
       <!-- ------------------------ Navigation ------------------------ -->
       <!-- ------------------------------------------------------------ -->
       <nav id="nav">
-        <div id="nav-panel" class="slide-up">
+        <div id="nav-panel" class="slide-up" style="top: -100%">
           <span>
             <h1>
-              <a href="#about" class="text-white">
+              <a href="#about" class="text-white" onclick="closeMenu()">
                 About
               </a>
             </h1>
           </span>
           <span>
             <h1>
-              <a href="#services" class="text-white">
+              <a href="#services" class="text-white" onclick="closeMenu()">
                 Services
               </a>
             </h1>
           </span>
           <span>
             <h1>
-              <a href="#contact" class="text-white">
+              <a href="#contact" class="text-white" onclick="closeMenu()">
                 Contact Me
               </a>
             </h1>
           </span>
           <span>
             <h1>
-              <a href="./projects/index.html" class="text-white">
+              <a href="/resources/projects/index.html" class="text-white">
                 Projects
               </a>
             </h1>
@@ -141,7 +140,7 @@
         </div>
         <a href="javascript:void(0)" onclick="toggleMenu()">
           <h1>
-            <i id="menu-toggle" class="fa fa-plus icon rotate-left"></i>
+            <i id="menu-toggle" class="fa fa-plus icon"></i>
           </h1>
         </a>
       </nav>
@@ -151,18 +150,23 @@
       <!-- ------------------------------------------------------------ -->
       <div
         id="showcase"
-        class="jumbotron jumbotron-fluid text-light d-flex align-items-center text-center"
-        style="min-height: 50vh;"
+        class="jumbotron jumbotron-fluid text-light d-flex flex-column justify-content-center align-items-center text-center"
+        style="min-height: 100vh;"
       >
-        <div class="container-fluid px-0 mx-0 py-4 my-3">
+        <div class="container-fluid px-0 mx-0 py-4 my-3 fixed-middle">
           <h1 data-aos="zoom-out-down" class="display-2 p-0">
             McKenzie Day
           </h1>
           <br />
-          <p data-aos="zoom-out-down" data-aos-delay="250" class="lead">
+          <p data-aos="zoom-out-down" data-aos-delay="200" class="lead">
             Student & Developer
           </p>
         </div>
+        <a data-aos="fade-in" data-aos-delay="600" href="#about" class="btn text-white" style="box-shadow: none;">
+          <h1 class="display-1">
+            <i class="fa fa-angle-double-left" style="transform: rotate(-90deg);"></i>
+          </h1>
+        </a href="#about">
       </div>
       <!-- ------------------------------------------------------------ -->
       <!-- ------------------------ Spotlight ------------------------- -->
@@ -173,7 +177,7 @@
       <div class="d-flex justify-content-around flex-wrap">
             <div data-aos="zoom-in-up" class="my-3 p-1">
               <div class="card h-100" style="width: 20rem;">
-                <img class="card-img-top p-3" src="/images/zoom.jpg">
+                <img class="card-img-top p-3" src="/resources/images/zoom.jpg">
                 <div class="card-body border-top">
                   <h5 class="card-title">Zoom Training & Support</h5>
                   <p class="card-text">
@@ -187,7 +191,7 @@
             </div>
             <div data-aos="zoom-in-up" class="my-3 p-1">
               <div class="card h-100" style="width: 20rem;">
-                <img class="card-img-top" src="/images/headshot.jpeg">
+                <img class="card-img-top" src="/resources/images/headshot.jpeg">
                 <div class="card-body border-top">
                   <h5 class="card-title">About Me</h5>
                   <p class="card-text">
@@ -201,7 +205,7 @@
             </div>
             <div data-aos="zoom-in-up" class="my-3 p-1">
               <div class="card h-100" style="width: 20rem;">
-                <img class="card-img-top" src="/images/maintenance.jpg">
+                <img class="card-img-top" src="/resources/images/maintenance.jpg">
                 <div class="card-body border-top">
                   <h5 class="card-title">Freelance Web Development</h5>
                   <p class="card-text">
@@ -230,12 +234,12 @@
           <div class="container-fluid my-5 py-5">
             <figure data-aos="fade-right" class="figure">
               <img
-                src="/images/scott-webb-7JdYRAJVm48-unsplash.jpg"
+                src="/resources/images/scott-webb-7JdYRAJVm48-unsplash.jpg"
                 alt="slc"
                 class="img-fluid rounded-lg my-3"
               />
               <figcaption class="figure-caption text-right">
-                Image by
+                Photo by
                 <a
                   href="https://unsplash.com/@scottwebb?utm_medium=referral&utm_campaign=photographer-credit&utm_content=creditBadge"
                   >Scott Webb</a
@@ -268,7 +272,7 @@
               >
                 <figure class="figure">
                   <img
-                    src="/images/Ryerson-rgb.png"
+                    src="/resources/images/Ryerson-rgb.png"
                     alt=""
                     class="figure-img img-fluid rounded-lg"
                   />
@@ -286,7 +290,7 @@
           <!-- ------------------------------------------------------------ -->
           <!-- <div data-aos="fade-right" class="container-fluid my-5 py-5">
           <figure class="figure">
-            <img src="/images/quote.jpg" alt="" class="figure-img img-fluid rounded-lg my-3">
+            <img src="/resources/images/quote.jpg" alt="" class="figure-img img-fluid rounded-lg my-3">
             <figcaption class="figure-caption text-right">
               Image credit to <a href="quotefancy.com">quotefancy</a>
             </figcaption>
@@ -299,7 +303,7 @@
               </p>
             </div>
             <figure data-aos="zoom-out-left" data-aos-delay="250" class="col">
-              <img src="/images/headshot.jpeg" alt="" class="figure-img img-fluid rounded-lg my-3">
+              <img src="/resources/images/headshot.jpeg" alt="" class="figure-img img-fluid rounded-lg my-3">
               <figcaption class="figure-caption">
                 That's me! Courtesy of my fellow friend/colleague Nael at Shutterstock!
               </figcaption>
@@ -314,7 +318,7 @@
             <figure class="figure">
               <img
                 data-aos="fade-right"
-                src="/images/pen-4337521_1920.jpg"
+                src="/resources/images/pen-4337521_1920.jpg"
                 alt=""
                 class="img-fluid rounded-lg my-3"
               />
@@ -338,9 +342,9 @@
                 <p class="blink d-inline p-0 m-0">_</p>
               </h1>
               <div class="container-fluid row">
-                <div class="text-monospace col-sm-12 col-md-7">
+                <div class="text-monospace col-sm-12 col-md-6 d-flex align-items-center">
                   <!-- Languages -->
-                  <div class="py-3 px-0">
+                  <div class="py-3 px-0 flex-fill">
                     <div data-aos="fade-right" class="row py-2">
                       <div class="col-6 word-fade">
                         <h5>Javascript</h5>
@@ -479,7 +483,7 @@
                 <!-- Info -->
                 <div
                   data-aos="fade-left"
-                  class="col col-md-5 col-sm-12 d-flex flex-column justify-content-center"
+                  class="col col-md-6 col-sm-12 d-flex flex-column justify-content-center"
                 >
                   <h3 class="text-nowrap">
                     A bit more Info
@@ -523,7 +527,7 @@
                   <div class="card h-100" style="width: 20rem;">
                     <img
                       class="card-img-top"
-                      src="/images/template-1599665_1280.png"
+                      src="/resources/images/template-1599665_1280.png"
                     />
                     <div class="card-body border-top">
                       <h5 class="card-title">Basic Website</h5>
@@ -545,7 +549,7 @@
                 <!-- Dynamic Web -->
                 <!-- <div data-aos="zoom-in-up" class="my-3 p-1">
                 <div class="card h-100" style="width: 20rem;">
-                  <img class="card-img-top" src="/images/dynamic.jpg">
+                  <img class="card-img-top" src="/resources/images/dynamic.jpg">
                   <div class="card-body border-top">
                     <h5 class="card-title">Dynamic Website</h5>
                     <p class="card-text">
@@ -563,7 +567,7 @@
                   <div class="card h-100" style="width: 20rem;">
                     <img
                       class="card-img-top"
-                      src="/images/monitor-1350918_1280.png"
+                      src="/resources/images/monitor-1350918_1280.png"
                     />
                     <div class="card-body border-top">
                       <h5 class="card-title">Website Maintenance</h5>
@@ -590,7 +594,7 @@
                 <!-- Zoom -->
                 <div data-aos="zoom-in-up" class="my-3 p-1">
                   <div class="card h-100" style="width: 20rem;">
-                    <img class="card-img-top p-3 pl-2" src="/images/zoom.jpg" />
+                    <img class="card-img-top p-3 pl-2" src="/resources/images/zoom.jpg" />
                     <div class="card-body border-top">
                       <h5 class="card-title">Zoom Training & Support</h5>
                       <p class="card-text">
@@ -616,7 +620,7 @@
                   <div class="card h-100" style="width: 20rem;">
                     <img
                       class="card-img-top"
-                      src="/images/web-3967926_1920.jpg"
+                      src="/resources/images/web-3967926_1920.jpg"
                     />
                     <div class="card-body border-top">
                       <h5 class="card-title">Tech Support</h5>
@@ -641,7 +645,7 @@
                   <div class="card h-100" style="width: 20rem;">
                     <img
                       class="card-img-top"
-                      src="/images/webinar-3199164_1920.jpg"
+                      src="/resources/images/webinar-3199164_1920.jpg"
                     />
                     <div class="card-body border-top">
                       <h5 class="card-title">Programming Tutor</h5>
@@ -677,22 +681,19 @@
           <div class="container-lg">
             <h1 class="display-3">Contact</h1>
             <hr />
-            <p class="text-muted w-75">
-              Have any questions or would like to inquire about something? Feel
-              free to hit my line!
-            </p>
             <!-- Form Area -->
             <div class="row">
               <!-- Form -->
               <div class="col-sm-12 col-md-6 mb-4">
-                <form id="contact-form">
-                  <div data-aos="fade-right" class="form-group" required="true">
+                <form id="contact-form" method="GET" onsubmit="sendEmail()">
+                  <div data-aos="fade-right" class="form-group">
                     <label for="name">Name</label>
                     <input
                       type="text"
                       class="form-control"
                       id="name"
                       placeholder="Your Name Here"
+                      required
                     />
                   </div>
                   <div data-aos="fade-right" class="form-group">
@@ -702,6 +703,7 @@
                       class="form-control"
                       id="subject"
                       placeholder="Your Inquiry Here"
+                      required
                     />
                   </div>
                   <div data-aos="fade-right" class="form-group">
@@ -711,26 +713,35 @@
                       class="form-control"
                       style="width: 100%; height: 15vh;"
                       placeholder="Your Message Here"
+                      required
                     ></textarea>
                   </div>
-                  <button
+                  <input
                     data-aos="fade-right"
                     type="submit"
+                    value="Send!"
                     class="btn btn-info btn-block py-2 rounded-lg"
-                    onclick="sendEmail()"
-                  >
-                    Send!
-                  </button>
+                  />
                   <p class="text-muted text-small font-italic py-3">
                     This will open an e-mail in your browser with the contents
                     of the message!
                   </p>
                 </form>
               </div>
-              <!-- Links -->
+              <!-- Map -->
               <div class="col-sm-12 col-md-6 mt-4">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184551.80858708112!2d-79.51813890275129!3d43.718403809796044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON!5e0!3m2!1sen!2sca!4v1586727383937!5m2!1sen!2sca"
+                  width="100%"
+                  height="100%"
+                  frameborder="0"
+                  style="border:0; min-height: 20vh;"
+                  allowfullscreen=""
+                  aria-hidden="false"
+                  tabindex="0"
+                  data-aos="fade-left"></iframe>
                 <!-- Linkedin -->
-                <div data-aos="fade-left" class="row">
+                <!-- <div data-aos="fade-left" class="row">
                   <div class="media">
                     <h1 class="mx-3"><i class="fab fa-linkedin"></i></h1>
                     <div class="media-body">
@@ -741,9 +752,9 @@
                       </p>
                     </div>
                   </div>
-                </div>
+                </div> -->
                 <!-- Gtthub -->
-                <div data-aos="fade-left" class="row">
+                <!-- <div data-aos="fade-left" class="row">
                   <div class="media">
                     <h1 class="mx-3"><i class="fab fa-github"></i></h1>
                     <div class="media-body">
@@ -756,9 +767,9 @@
                       </p>
                     </div>
                   </div>
-                </div>
+                </div> -->
                 <!-- Code Pen -->
-                <div data-aos="fade-left" class="row">
+                <!-- <div data-aos="fade-left" class="row">
                   <div class="media">
                     <h1 class="mx-3"><i class="fab fa-codepen"></i></h1>
                     <div class="media-body">
@@ -771,7 +782,7 @@
                       </p>
                     </div>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -867,11 +878,9 @@
       src="https://kit.fontawesome.com/4dd656e5a3.js"
       crossorigin="anonymous"
     ></script>
-    <!-- GSAP Animation Library -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.2/gsap.min.js"></script> -->
     <!-- AOS Scripts -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- Custom Scripts -->
-    <script src="script.js"></script>
+    <script src="/resources/scripts/home.js"></script>
   </body>
 </html>
