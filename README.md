@@ -1,3 +1,1 @@
-### McKenzie Day Portfolio
-
-## https://macday.github.io/portfolio/
+https://mckenzieday.ca
